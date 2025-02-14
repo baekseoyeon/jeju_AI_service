@@ -28,12 +28,12 @@ import google.generativeai as genai
 
 # GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 # genai.configure(api_key=GOOGLE_API_KEY)
-genai.configure(api_key="AIzaSyBqa7ucbAEBAin6FjF940_ffKeIIVhEJ-I")  # API 키를 직접 입력
+genai.configure(api_key="key")  # API 키를 직접 입력
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # 파일 경로 설정
-faiss_index_path = "9000_faiss_index_file.index"
-document_ids_path = "9000_chunk_document_ids.npy"
+faiss_index_path = "9000_faiss_index_path"
+document_ids_path = "9000_chunk_document_ids_path"
 file_path = '9000_chunk_sentence_modify_v18_result_final.csv'
 user_dictionary_path = 'user_dictionary.txt'  # 사용자 사전 파일 경로
 
